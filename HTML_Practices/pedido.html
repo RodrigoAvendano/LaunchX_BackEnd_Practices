@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GigaPasteles</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="vendors/jquery/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <a href="index.html" class="enlace"><img src="assets/imgs/logo.png" alt="Logo de Gigapasteles" class="logo"></a>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="pasteles.html">Pasteles</a></li>
+            <li><a class="active" href="pedido.html">Pedido</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="pedido.html">Pastelero</a></li>
+        </ul>
+    </nav>
+    <div class="pedidos">
+        <form class="form-pasteles">
+            <ul id="progressbar">
+            <li class="active">Ingresa tus datos</li>
+            <li>Selecciona tu sabor</li>
+            <li>Selecciona tus adornos</li>
+            <li>Danos m&aacute;s informaci&oacute;n</li>
+          </ul>
+            <fieldset>
+              <h2 class="fs-title">Ingresa tus datos</h2>
+            <h3 class="fs-subtitle">Paso 1 de 4</h3>
+              <input type="text" name="name" placeholder="Nombre" />
+              <input type="number" name="tel" placeholder="Tel&eacute;fono" />
+              <input type="email" name="mail" placeholder="Correo Electr&oacute;nico" />
+              <input type="button" name="next" class="next action-button" value="Siguiente" />
+            </fieldset>
+            
+            <fieldset>
+              <h2 class="fs-title">Selecciona tu sabor</h2>
+            <h3 class="fs-subtitle">Paso 2 de 4</h3>
+              
+              <!--Checkboxes-->
+               <label><input type="checkbox" id="flavor1" value="Fresa">Fresa</label><br>
+              
+              <label><input type="checkbox" id="flavor2" value="Fresa">Vainilla</label>
+              <br>
+              
+        <label><input type="checkbox" id="flavor3" value="Fresa">Chocolate</label>  
+         <br>
+         <label><input type="checkbox" id="flavor4" value="Fresa">Cajeta</label> 
+         <br>     
+        <label><input type="checkbox" id="flavor5" value="Fresa">Lim&oacute;n</label> 
+              <br>
+              <input type="button" name="previous" class="previous action-button" value="Anterior" />
+              <input type="button" name="next" class="next action-button" value="Siguiente" />
+            </fieldset>
+            
+            <fieldset>
+              <h2 class="fs-title">Selecciona tus adornos</h2>
+            <h3 class="fs-subtitle">Paso 3 de 4</h3>
+              <!--Checkboxes-->
+               <label><input type="checkbox" id="ornament1" value="Fresa">Velas</label><br>
+              
+              <label><input type="checkbox" id="ornament2" value="Fresa">Dibujo</label>
+              <br>
+              
+        <label><input type="checkbox" id="ornament3" value="Fresa">Frutas</label>  
+         <br>
+         <label><input type="checkbox" id="ornament4" value="Fresa">Figuras</label> 
+         <br>     
+              <input type="button" name="previous" class="previous action-button" value="Anterior" />
+              <input type="button" name="next" class="next action-button" value="Siguiente" />      
+            </fieldset>
+            
+            <fieldset>
+              <h2 class="fs-title">Datos sobre tu pastel</h2>
+            <h3 class="fs-subtitle">Paso 4 de 4</h3>
+              
+              <textarea name="datos" id="datos" cols="30" rows="10" placeholder="Ej. Dibujo de gatitos, velas con el número 15"></textarea>
+              <br>
+              <input type="button" name="previous" class="previous action-button" value="Anterior" />
+              <input type="submit" name="submit" class="submit action-button" value="Hacer Pedido" />   
+            </fieldset>
+          </form>
+    </div>
+    <script src="assets/scripts/script.js"></script>
+</body>
+
+</html>
